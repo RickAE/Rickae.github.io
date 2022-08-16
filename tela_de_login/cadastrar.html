@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Novo Usuário</title>
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="box_comp">
+                <div id="wrapper_comp">
+
+                    <h1 class="criar_conta">Criar Conta</h1>
+                    <div class="wrapper_txt">
+                        <label for="txt_nome">Nome</label>
+                        <input type="text" name="txt_nome" id="txt_nome">
+                    </div>
+    
+                    <div class="wrapper_txt">
+                        <label for="txt_usuario">Usuario</label>
+                        <input type="text" name="txt_usuario" id="txt_usuario">
+                    </div>
+    
+                    <div class="wrapper_txt">
+                        <label for="txt_senha">Senha</label>
+                        <input type="password" name="txt_senha" id="txt_senha">
+                    </div>
+    
+                    <div class="wrapper_txt">
+                        <label for="txt_confirme_senha">Confirme Sua Senha</label>
+                        <input type="password" name="txt_confirme_senha" id="txt_confirme_senha">
+                    </div>
+    
+                </div>
+                <button id="btn_cadastrar" onclick="cadastrar()">Cadastrar</button>
+            </div>
+            
+        </div>
+
+        <script src="js/login.js"></script>
+    </body>
+</html>

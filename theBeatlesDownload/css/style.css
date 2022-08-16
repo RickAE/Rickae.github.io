@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font-family: 'Bebas Neue', 'cursive';
+    background-image: url(../img/abExtended.jpg);
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 5px;
+   
+}
+
+#menu-topo li
+{
+    float: left;
+}
+
+#menu-topo li a
+{
+    color: #fff;
+    margin: 25px;
+    font-size: 3em;
+}
+
+#menu-topo li a:hover
+{
+    color: #37c5fd;
+}
+
+#container-discos
+{
+    padding: 10px;
+}
+
+.disco
+{
+    display: flex;
+    align-items: top;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 10px;
+}
+
+
+.disco p 
+{
+    font-size: 2em;
+}
+
+.capa
+{
+    width: 200px;
+}
+
+.disco-descricao
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.disco-descricao ul li
+{
+    font-size: 1.5em;
+}
+
+.download-album
+{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.download-album:hover
+{
+    cursor: pointer;
+    background: #fff;
+    color: black;
+}
+
+.sub-download
+{
+    color: #37c5fd;
+    font-size: 1.2em;
+}
+
+.sub-download:hover
+{
+    color: #7dd5f8;
+}
+
+.downloads
+{
+    display: flex;
+    align-items: center;
+}
+
+.list-sub-download
+{
+    display: none;
+}
+
+.list-sub-download li 
+{
+    float: left;
+    padding: 0px 8px;
+}
+
+
+
+.info
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.info p 
+{
+    font-size: 1.7em;
+}
+
+#rodape
+{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo-rodape
+{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#conteudo-rodape img
+{
+    margin-bottom: 10px;
+}
+
+#container-info
+{
+    padding: 10px;
+}
+
+.noticia
+{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-noticia
+{
+    font-size: 2.5em;
+    margin-left: 15px;
+}
+
+.titulo-noticia:hover
+{
+    cursor: pointer;
+    color: #37c5fd;
+}
+
+.noticia img
+{
+    width: 600px;
+}
+
+#destaque
+{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.titulo-destaque
+{
+    font-size: 3em;
+}
+
+.texto-destaque
+{
+    font-size: 2em;
+}
+
+.video
+{
+    margin-bottom: 20px;
+    width: 55%;
+    height: 411px;
+}
+
+#btn-mobile
+{
+    display: none;
+}
+
+@media(max-width:895px)
+{
+    #menu-topo
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 100vw;
+        top: 160px;
+        right: -4px;
+        height: 0px;
+        transition: 1s;
+        background: #9bd7f3;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu-principal.active #menu-topo
+    {
+        height: 100vw;
+        visibility: visible;
+    }
+
+
+    #menu-topo li 
+    {
+        padding: 7px 0px;
+        margin-left: 10px;
+    }
+
+    #btn-mobile
+    {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+ 
+    #hamburger
+    {
+        width: 20px;
+        border-top: 2px solid;
+        gap: .2rem;
+        display: block;
+        color: #fff;
+    }
+    #hamburger::after, #hamburger::before
+    {
+        display: block;
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+    }
+}
